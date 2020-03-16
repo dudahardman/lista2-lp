@@ -13,23 +13,15 @@ int main(){
         cout << "Nao foi possivel abrir o arquivo" << endl;
         return 0;
     }
-
     arquivo << "Maria Eduarda Dantas";
     arquivo.close();
 
     arquivo.open("teste.txt");
-
-    string leit;
-    //char leit[21];
-    
+    string leit;    
     while(!arquivo.eof()){
         getline(arquivo,leit);
-        //arquivo >> leit;
-        //arquivo.getline(leit,21);
     }
-
     cout << leit << endl;
-
     arquivo.close();
 
     ofstream arquivo2;
