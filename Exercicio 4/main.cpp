@@ -16,6 +16,7 @@ int main(){
 
     try{
         teste->validaNumero(num);
+        cout << "Numero: " << num << endl;
     }catch(exception& tst){
         cout << tst.what() << endl;
     }
